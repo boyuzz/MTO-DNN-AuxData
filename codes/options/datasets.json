@@ -1,0 +1,456 @@
+{
+	"MNIST": {
+		"train": {
+			"download": true,
+			"num_classes": 10,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			"batch_size": 128
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 128
+		}
+	},
+	"FashionMNIST": {
+		"train": {
+			"download": true,
+			"num_classes": 10,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 128
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 128
+		}
+	},
+	"CIFAR10": {
+		"train": {
+			"download": true,
+			"num_classes": 10,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 32
+		},
+		"test": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 32
+		}
+	},
+	"CIFAR100": {
+		"train": {
+			"download": true,
+			"num_classes": 100,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 64
+		},
+		"test": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 64
+		}
+	},
+	"OxfordFlowers": {
+		"train": {
+			"download": true,
+			"num_classes": 102,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 64
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 64
+		}
+	},
+	"ImageNetFlowers": {
+		"train": {
+			"download": true,
+			"num_classes": 3,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 64
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 64
+		}
+	},
+	"ImageNetPets": {
+		"train": {
+			"download": true,
+			"num_classes": 125,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 64
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 64
+		}
+	},
+	"StanfordDogs": {
+		"train": {
+			"download": true,
+			"num_classes": 120,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 64
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 64
+		}
+	},
+	"ISIC": {
+		"train": {
+			"download": true,
+			"num_classes": 7,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 64
+		},
+		"test": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 64
+		}
+	},
+	"ImageNet": {
+		"train": {
+			"download": true,
+			"num_classes": 1000,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 64
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 64
+		}
+	},
+	"ImageNet32": {
+		"train": {
+			"download": true,
+			"num_classes": 1000,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 128
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 128
+		}
+	},
+	"RSSCN7": {
+		"train": {
+			"download": true,
+			"num_classes": 7,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 32
+		},
+		"test": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 32
+		}
+	},
+	"AID": {
+		"train": {
+			"download": true,
+			"num_classes": 30,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 32
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 32
+		},
+		"test": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 32
+		}
+	},
+	"WHU19": {
+		"train": {
+			"download": true,
+			"num_classes": 19,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 32
+		},
+		"test": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 32
+		}
+	},
+	"UCMerced": {
+		"train": {
+			"download": true,
+			"num_classes": 21,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 32
+		},
+		"test": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 32
+		}
+	},
+	"RSSRAI": {
+		"train": {
+			"download": true,
+			"num_classes": 45,
+			"mode": "file",
+			"imbalance": false,
+			"dataroot": "D:/data",
+			"use_shuffle": true,
+			
+			"batch_size": 8
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "D:/data",
+			"use_shuffle": false,
+			
+			"batch_size": 8
+		}
+	},
+	"OxfordPets": {
+		"train": {
+			"download": true,
+			"num_classes": 37,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 64
+		},
+		"test": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 64
+		}
+	},
+	"StanfordCar": {
+		"train": {
+			"download": true,
+			"num_classes": 196,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 64
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 64
+		}
+	},
+	"FgvcAircraft": {
+		"train": {
+			"download": true,
+			"num_classes": 100,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 64
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 64
+		}
+	},
+	"INRIA": {
+		"train": {
+			"download": false,
+			"num_classes": 1,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": true,
+			
+			"batch_size": 1
+		},
+		"val": {
+			"download": false,
+			"mode": "file",
+			"dataroot": "../data",
+			"use_shuffle": false,
+			
+			"batch_size": 1
+		}
+	},
+	"Australian": {
+		"train": {
+			"download": false,
+			"mode": "numeric",
+			"dataroot": "../data/UCI",
+			"is_norm": true,
+			"use_shuffle": true,
+			
+			"batch_size": 690
+		}
+	},
+	"kdd": {
+		"train": {
+			"download": false,
+			"mode": "table",
+			"dataroot": "../data",
+			"is_norm": true,
+			"use_shuffle": true,
+			
+			"batch_size": 128
+		}
+	},
+	"aGrass": {
+		"train": {
+			"download": false,
+			"mode": "imgen",
+			"dataroot": "../data/ImgGeneration",
+			"is_norm": true,
+			"use_shuffle": true,
+			
+			"batch_size": 16
+		}
+	},
+	"bField": {
+		"train": {
+			"download": false,
+			"mode": "imgen",
+			"dataroot": "../data/ImgGeneration",
+			"is_norm": true,
+			"use_shuffle": true,
+			
+			"batch_size": 16
+		}
+	},
+	"cIndustry": {
+		"train": {
+			"download": false,
+			"mode": "imgen",
+			"dataroot": "../data/ImgGeneration",
+			"is_norm": true,
+			"use_shuffle": true,
+			
+			"batch_size": 16
+		}
+	},
+	"ImgGeneration": {
+		"train": {
+			"download": true,
+			"mode": "imgen",
+			"dataroot": "../data/",
+			"is_norm": true,
+			"use_shuffle": true,
+			
+			"batch_size": 16
+		}
+	}
+}

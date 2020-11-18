@@ -1,0 +1,45 @@
+{
+	"name": "mnist_classification", //  please remove "debug_" during training,
+	"use_tb_logger": true,
+	"manual_seed": 1,
+	"resume": false,
+	"niter": 1e5,
+	"val_freq": 5e2,
+	"path": {
+		"root": "../",
+		"resume_state": "../experiments/mnist_classification/task0/training_state/1000.state",
+//		"pretrain_model": "../experiments/mnist_alone_same_start/task0/models/30000.pth"
+		"pretrain_model": null,
+		"data_config": "./options/datasets.json"
+	},
+	"datasets": {
+		"main": "MNIST",
+		"aux1": "FashionMNIST"
+	},
+	"model":"classification",
+	"network": "Mnist_LeNet",	// Please specify "dataset_network"
+	"num_classes": 10,
+//	"act_transfer": false,
+//	"w_transfer": true,
+	"train": {
+		"optim": "SGD",
+		"optimizer_param": {
+			"lr": 0.01,
+			"momentum": 0.9,
+			"weight_decay": 5e-4,
+			"nesterov": true
+			// "amsgrad": true
+		},
+		"lr_scheme": "MultiStepLR",
+		"lr_steps": [3e4, 6e4, 9e4],
+		"lr_gamma": 0.1,
+		"loss": "cross_entropy",	// L1 loss is hard to optimise
+		"kd_weight": 1,
+		"at_weight": 1,
+		"ws_weight": 0.1
+	},
+	"logger": {
+		"print_freq": 100,
+		"save_checkpoint_freq": 1e4
+	}
+}

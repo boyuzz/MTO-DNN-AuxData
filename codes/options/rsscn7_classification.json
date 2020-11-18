@@ -1,0 +1,55 @@
+{
+	"name": "debug_RSSCN7_w_VS_rancl_resnet18_seed2", //  please remove "debug_" during training,
+	"use_tb_logger": false,
+	"manual_seed": 0,
+	"resume": false,
+	"niter": 1e4,
+	"val_freq": 100,
+	"patience": 10,
+	"path": {
+		"root": "../",
+		"resume_state": null,
+		"pretrain_model": null, //"./trained_model/latest.pth",
+		"data_config": "./options/datasets.json"
+	},
+	"datasets": {
+		"main": "RSSCN7"
+	},
+	"model":"classification",
+	"network": "Imagenet-resnet18",	// Please specify "dataset_network"
+	"imagenet_pretrained": true,
+	"val_split": "val",
+	"train": {
+		"optim": "SGD",
+		"optimizer_param": {
+			"lr": 0.001,
+			"momentum": 0.9,
+			"weight_decay": 1e-4,
+			"nesterov": true
+			// "amsgrad": true
+		},
+		"lr_scheme": "MultiStepLR",
+		"lr_scheme_param": {
+//			"base_lr": 1e-5,
+//			"max_lr": 1e-3,
+////			"step_size_up": 1e4,
+//			"mode": "triangular2",
+//			"cycle_momentum": true,
+//			"base_momentum": 0.8,
+//			"max_momentum": 0.95
+			"milestones": [2e3, 7e3],
+			"gamma": 0.1
+//			"factor": 0.2,
+//			"patience": 100,
+//			"min_lr": 1e-6
+		},
+		"loss": "cross_entropy",	// L1 loss is hard to optimise
+		"kd_weight": 1,
+		"at_weight": 1,
+		"ws_weight": 0.1
+	},
+	"logger": {
+		"print_freq": 100,
+		"save_checkpoint_freq": 2e3
+	}
+}
